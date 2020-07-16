@@ -120,7 +120,7 @@ class CardList extends React.Component {
             processedStoryList = processedStoryList.sort((a, b) => (a.descendants > b.descendants) ? 1 : -1)
         }
         if (searchTerm) {
-            processedStoryList = _.filter(processedStoryList, function (story) { return story.by.includes(searchTerm) });
+            processedStoryList = _.filter(processedStoryList, function (story) { return (story.by.includes(searchTerm) || story.by.includes(_.capitalize(searchTerm)) || story.by.includes(_.toUpper(searchTerm)) ||  story.by.includes(_.toLower(searchTerm))) });
         } 
         return (
             <div className={classes.allCardsMobile} >
