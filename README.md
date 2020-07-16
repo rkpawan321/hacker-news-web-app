@@ -1,3 +1,122 @@
+******************************************************************************************************************
+
+Built By :
+
+Name :  Pawan R K
+
+Phone : +91 9482234279
+
+Mail: rkpawan321@gmail.com
+
+LinkedIn : https://www.linkedin.com/in/pawan-rk-44479488/
+
+RESUME : https://drive.google.com/file/d/16FciXGa7OJM8wwUXpdbRk9tw2_yiEhpW/view?usp=sharing
+
+*******************************************************************************************************************
+
+PROBLEM STATEMENT :  To develop a pseudo Front End Application which would let the users help list and
+browse top Hacker News articles conveniently.
+
+*******************************************************************************************************************
+
+Hosted at : https://hacker-news-web-app.et.r.appspot.com
+
+Github Links : https://github.com/rkpawan321/hacker-news-web-app
+
+*******************************************************************************************************************
+
+ARCHITECTURE
+
+Language used : Javascript
+
+Tech Stack: ReactJs
+
+Libraries used:  Redux, Axios. Redux-persist, Lodash, MomentJs
+
+Middleware used : Redux-Thunk
+
+Design: CSS, Material Design, Media query
+
+*******************************************************************************************************************
+
+REASONS FOR CHOOSING ABOVE TECH STACK
+1) React is a better stack for frontend web-app development because of its code versetality.
+2) State management is easily achieved.
+3) Redux is used for app store management. The data that needs to be persisted is stored in local-storage using Redux-persist library.
+4) GET, POST Api Calls is achieved by Axios library.
+5) All Time and Date related data is handled using MomentJS. This is because Moment JS has better options when it comes to time-zone.
+6) Lodash library is employed to manipulate arrays and objects, as well as functions, strings easily. It also helps in code Maintainability .
+7) Material UI solves most of the issues related to responsiveness of the web-app. Still Media queries is used to ensure the responsiveness in most of the handheld devices too.
+
+*******************************************************************************************************************
+
+Webapp features
+
+This is a web-app which lets the users browse through top Hacker News articles.
+
+1) Each News story is shown in a card which has information about story title, date and time of post, author and number of comments.
+
+2) It also has a link button clicking on which opens the original news article in a new window (with target="_blank")
+
+3) The user is given an option to sort the news by 4 ways.
+ a) Most Recent News First.
+ b) Old news first.
+ c) Highest commented news first.
+ d) Lowest commented news first.
+ 
+ All these sorting is done at local storage level. This helps on avoiding unnecessary api calls.
+ 
+4) It also has a feature by which user can search article by author name. To use this, click on the Search Float Button on the bottom-right of the screen.
+
+5) The User Interface is made responsive enabling smooth functioning across both hand-held devices as well as desktop/laptop.
+
+6) For a better UI/UX experience, the web-app is build on DARK-MODE.
+
+**********************************************************************************************************************
+
+API REFERENCE
+
+https://github.com/HackerNews/API
+
+GET TOP STORIES : https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty
+
+
+GET_STORY_BY_ID :  https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
+
+
+**************************************************************************************************************
+
+LOCAL SETUP
+Frontend
+Requirements: NodeJS
+1) Clone the repository
+2) npm start
+
+                     
+
+**************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
