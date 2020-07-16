@@ -42,7 +42,7 @@ Design: CSS, Material Design, Media query
 REASONS FOR CHOOSING ABOVE TECH STACK
 1) React is a better stack for frontend web-app development because of its code versetality.
 2) State management is easily achieved.
-3) Redux is used for app store management. The data that needs to be persisted is stored in local-storage using Redux-persist library.
+3) Redux is used for app store management. The data that needs to be persisted is stored local in session storage using Redux-persist library.
 4) GET, POST Api Calls is achieved by Axios library.
 5) All Time and Date related data is handled using MomentJS. This is because Moment JS has better options when it comes to time-zone.
 6) Lodash library is employed to manipulate arrays and objects, as well as functions, strings easily. It also helps in code Maintainability .
@@ -64,11 +64,14 @@ This is a web-app which lets the users browse through top Hacker News articles.
  c) Highest commented news first.
  d) Lowest commented news first.
  
- All these sorting is done at local storage level. This helps on avoiding unnecessary api calls.
+ All these sorting is done at session storage level. This helps on avoiding unnecessary api calls.
  
 4) It also has a feature by which user can search article by author name. To use this, click on the Search Float Button on the bottom-right of the screen.
 
 5) The User Interface is made responsive enabling smooth functioning across both hand-held devices as well as desktop/laptop.
+This is achieved using media query and Flex-Box CSS.
+
+6) Infinite Loading is employed as the number of story records are large in number. Each time only 15 records are loaded.
 
 6) For a better UI/UX experience, the web-app is build on DARK-MODE.
 
